@@ -67,15 +67,16 @@ nrow(activity)-nrow(valid_data)
 ```
 replacing missing values with the averages per interval
 
-It could be done with the package gam and the function na.gam.replace. It replaces NA values with the mean of the non missing entries.
+It could be done with the package "gam" and the function na.gam.replace. It replaces NA values with the mean of the non missing entries.
 
 install.packages("gam", repo="http://cran.rstudio.com/")
+
 library(gam)
 
 activity1 <- na.gam.replace(activity)
 
 
-or the same can be achieved replacing NA with the average value of the steps that has been previously calculated:
+or the same can be achieved replacing NA with the average value of the steps that have been previously calculated:
 
 
 ```r
